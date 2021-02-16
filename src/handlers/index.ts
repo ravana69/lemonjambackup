@@ -1,9 +1,9 @@
 import { bot } from '../bot';
 
-import { playHandler } from './play';
-import { queueHandler } from './queue';
-import { pauseHandler } from './pause';
-import { skipHandler } from './lumd';
+import { playHandler } from './chalu';
+import { queueHandler } from './dikha';
+import { pauseHandler } from './ruk';
+import { skipHandler } from './nikal';
 
 export const initHandlers = (): void => {
     bot.use(playHandler);
