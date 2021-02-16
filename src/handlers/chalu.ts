@@ -1,7 +1,7 @@
 import { Composer } from 'telegraf';
 import { addToQueue } from '../tgcalls';
 
-export const playHandler = Composer.command('play', async ctx => {
+export const playHandler = Composer.command('chalu', async ctx => {
     const { chat } = ctx.message;
 
     if (chat.type !== 'supergroup') {
