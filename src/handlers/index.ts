@@ -3,7 +3,7 @@ import { bot } from '../bot';
 import { playHandler } from './play';
 import { queueHandler } from './queue';
 import { pauseHandler } from './pause';
-import { skipHandler } from './skip';
+import { skipHandler } from './lumd';
 
 export const initHandlers = (): void => {
     bot.use(playHandler);
