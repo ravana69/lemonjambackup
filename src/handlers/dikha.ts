@@ -12,7 +12,7 @@ export const queueHandler = Composer.command('dikha', ctx => {
     const message =
         queue && queue.length > 0
             ? queue.map((url, index) => `${index + 1}. ${url}`).join('\n')
-            : 'The queue is empty.';
+            : 'o gamdu, tere ko kya dikhaun.';
 
     ctx.reply(message);
 });
