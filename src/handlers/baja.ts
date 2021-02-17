@@ -19,5 +19,5 @@ export const playHandler = Composer.command('baja', async ctx => {
 
     const index = await addToQueue(chat, text);
 
-    await ctx.reply(index === 0 ? 'Gaana baj raha hai.' : `Queued at position ${index}.`);
+    await ctx.reply(index === 0 ? 'Gaana baj raha hai.' : `${index} lumd le chuka hoon bsdk.`);
 });
