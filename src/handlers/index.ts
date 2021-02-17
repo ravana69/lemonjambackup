@@ -1,6 +1,6 @@
 import { bot } from '../bot';
 
-import { playHandler } from './chalu';
+import { playHandler } from './baja';
 import { queueHandler } from './dikha';
 import { pauseHandler } from './ruk';
 import { skipHandler } from './nikal';
