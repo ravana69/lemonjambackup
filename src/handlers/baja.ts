@@ -5,7 +5,7 @@ export const playHandler = Composer.command('baja', async ctx => {
     const { chat } = ctx.message;
 
     if (chat.type !== 'supergroup') {
-        await ctx.reply('Mai sirf group mei hi baja sakta hoon.');
+        await ctx.reply('Mai sirf group mei hi bajti hoon.');
         return;
     }
 
@@ -13,11 +13,11 @@ export const playHandler = Composer.command('baja', async ctx => {
     const text = ctx.message.text.slice(commandEntity.length + 1);
 
     if (!text) {
-        await ctx.reply('Lenk tera baap dega lawde.');
+        await ctx.reply('Lenk toh dedo bhabhi.');
         return;
     }
 
     const index = await addToQueue(chat, text);
 
-    await ctx.reply(index === 0 ? 'Gaana baj raha hai.' : `${index} lumd le chuka hoon bsdk.`);
+    await ctx.reply(index === 0 ? 'Bhabhi Gaana baj raha hai.' : `${index} ashiq already hai mere.`);
 });
