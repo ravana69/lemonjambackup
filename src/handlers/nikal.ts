@@ -9,5 +9,5 @@ export const skipHandler = Composer.command('nikal', ctx => {
     }
 
     const skipped = skip(chat.id);
-    ctx.reply(skipped ? 'Nikal Lawde.' : "Pehli Fursat Mei Nikal.");
+    ctx.reply(skipped ? 'Chalti hoon jaan fir milenge.' : "Chali jati hoon kisi ke dhun mei.");
 });
