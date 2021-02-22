@@ -9,7 +9,7 @@ export const pauseHandler = Composer.command(['ruk', 'chalu'], async ctx => {
     }
 
     const paused = await pause(chat.id);
-    const message = paused === null ? "Tera baap baja ke gaya kya." : paused ? 'ruk saale.' : 'chalu.';
+    const message = paused === null ? "apne bulaya hai kya jaan." : paused ? 'Ruk jati hoon tumhare liye jaan.' : 'chalu ho jao mere saath.';
 
     await ctx.reply(message);
 });
